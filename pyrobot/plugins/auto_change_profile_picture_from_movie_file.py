@@ -19,7 +19,7 @@ from pyrobot import (
     TMP_DOWNLOAD_DIRECTORY
 )
 
-SLEEP_DELAY = 49
+SLEEP_DELAY = 10
 START_TIME = os.environ.get("MOVIE_L_START_TIME", None)
 MOVIE_IS_RUNNING = False
 
@@ -144,7 +144,7 @@ async def super_impose_text_o_img(img_path, text):
     )
     font = ImageFont.truetype(
         font_location,
-        size=45
+        size=30
     )
     # calculation for the offset
     text_w, text_h = draw.textsize(text, font)
